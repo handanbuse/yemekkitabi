@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="View.tarif">
+
+
+    <EditText
+        android:id="@+id/isimEdittext"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:hint="yemek ismini giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/malzemeedittex"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="74dp"
+        android:ems="10"
+        android:hint="malzeme giriniz"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/kaydetbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/isimEdittext" />
+
+    <Button
+        android:id="@+id/kaydetbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="164dp"
+        android:onClick="kaydet"
+        android:text="kaydet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/malzemeedittex" />
+
+    <Button
+        android:id="@+id/silbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="21dp"
+        android:onClick="sil"
+        android:text="sil"
+        app:layout_constraintEnd_toEndOf="@+id/malzemeedittex"
+        app:layout_constraintTop_toBottomOf="@+id/malzemeedittex" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="51dp"
+        android:onClick="gorselsec"
+        android:scaleType="fitXY"
+        android:src="@drawable/ascigorsel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
